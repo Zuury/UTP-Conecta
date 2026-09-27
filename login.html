@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eConecta | Universidad Tecnológica de Panamá</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body id="bg-body">
+ 
+  <header class="header-clock">
+    <span id="clock">00:00:00</span>
+    <span id="timezone">Panamá, UTC-5</span>
+  </header>
+ 
+  <main class="login-card">
+    <div class="logo-box">
+      <img src="assets/utp-logo.png" alt="Universidad Tecnológica de Panamá" class="logo-utp">
+      <h1 class="brand-title">eConecta</h1>
+    </div>
+ 
+    <form id="login-form" onsubmit="event.preventDefault();">
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Usuario" aria-label="Usuario" autocomplete="username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Contraseña" aria-label="Contraseña" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn-acceder">Acceder</button>
+    </form>
+ 
+    <div class="forgot-wrapper">
+      <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+    </div>
+ 
+    <hr class="divider">
+ 
+    <section class="register-section">
+      <h2>Registrarse como usuario</h2>
+      <p class="register-text">
+        Registrarse solamente con su cuenta de correo institucional. Su correo institucional lo puede encontrar en la página web del <a href="#" class="inline-link">Sistema de Matrícula</a>.
+      </p>
+      <button type="button" class="btn-register">Crear nueva cuenta</button>
+    </section>
+ 
+    <hr class="divider">
+ 
+    <footer class="card-footer">
+      <select class="lang-select" id="lang-select" aria-label="Idioma">
+        <option value="es" selected>Español - Int (es)</option>
+        <option value="en">English - Int (en)</option>
+      </select>
+      <button type="button" class="btn-cookies">Aviso de Cookies</button>
+    </footer>
+  </main>
+ 
+  <button type="button" class="help-btn" aria-label="Ayuda">?</button>
+ 
+  <script src="JavaScript/main.js"></script>
+</body>
+</html>
