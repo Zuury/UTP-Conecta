@@ -1,26 +1,363 @@
-<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Comunidad U - Conecta. Aprende. Oportunidades reales.</title> </head> <body> <header> <div> <div> <span>🎓</span> <span>Comunidad U</span> </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunidad U - Conecta. Aprende. Oportunidades reales.</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<nav>
-  <a href="#">Inicio</a>
-  <a href="#">Oportunidades</a>
-  <a href="#">Comunidades</a>
-  <a href="#">Recursos</a>
-  <a href="#">Consejos</a>
-</nav>
+<!-- HEADER / NAVBAR -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="logo">
+      <span class="logo-icon">🎓</span>
+      <span class="logo-text">Comunidad U</span>
+    </div>
 
-<div>
-  <div>
-    <span>&#128269;</span>
-    <input type="text" placeholder="Buscar oportunidades, carreras, empresas...">
+    <nav class="main-nav">
+      <a href="#" class="nav-link active">Inicio</a>
+      <a href="#" class="nav-link">Oportunidades</a>
+      <a href="#" class="nav-link">Comunidades</a>
+      <a href="#" class="nav-link">Recursos</a>
+      <a href="#" class="nav-link">Consejos</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <div class="search-box">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" placeholder="Buscar oportunidades, carreras, empresas...">
+      </div>
+      <button class="icon-btn bell-btn" aria-label="Notificaciones">
+        &#128276;
+        <span class="badge-dot"></span>
+      </button>
+      <div class="user-avatar">
+        <span class="avatar-icon">&#128100;</span>
+      </div>
+      <span class="chevron">&#9662;</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-icon">&#128101;</span>
+          La comunidad universitaria que impulsa tu futuro
+        </div>
+        <h1 class="hero-title">
+          Conecta. Aprende.<br>
+          Oportunidades <span class="highlight">reales.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Encuentra prácticas, empleos y recursos, comparte experiencias
+          y crece junto a estudiantes y egresados como tú.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">
+            <span class="btn-icon">&#128188;</span> Explorar oportunidades
+          </button>
+          <button class="btn btn-outline">
+            <span class="btn-icon">&#128101;</span> Unirme a la comunidad
+          </button>
+        </div>
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <div class="mini-avatar">Agregar Imagen aqui</div>
+            <div class="mini-avatar">Agregar Imagen aqui</div>
+            <div class="mini-avatar">Agregar Imagen aqui</div>
+          </div>
+          <p class="social-proof-text">
+            <strong>+5,000 estudiantes y egresados</strong><br>
+            ya forman parte de la comunidad
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image image-placeholder">
+          Agregar Imagen aqui
+        </div>
+        <div class="hero-quote-card">
+          <span class="quote-mark">&#8220;</span>
+          <p class="quote-text">
+            Encontré mi práctica ideal gracias a una recomendación en la comunidad.
+          </p>
+          <p class="quote-author">— <strong>Camila R.</strong>, Estudiante de Ingeniería</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-icon icon-blue">&#128188;</div>
+        <div class="stat-text">
+          <div class="stat-number">2,450+</div>
+          <div class="stat-label">Oportunidades publicadas</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon icon-green">&#127970;</div>
+        <div class="stat-text">
+          <div class="stat-number">980+</div>
+          <div class="stat-label">Empresas activas en la plataforma</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon icon-purple">&#128101;</div>
+        <div class="stat-text">
+          <div class="stat-number">12,300+</div>
+          <div class="stat-label">Estudiantes y egresados conectados</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon icon-orange">&#128172;</div>
+        <div class="stat-text">
+          <div class="stat-number">5,600+</div>
+          <div class="stat-label">Conversaciones y consejos compartidos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT GRID: Categories/Opportunities + Sidebar -->
+  <div class="content-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="content-left">
+
+      <!-- CATEGORIES -->
+      <section class="categories-section">
+        <div class="section-header">
+          <h2>Explora oportunidades por categoría</h2>
+          <a href="#" class="see-all-link">Ver todas las categorías &rsaquo;</a>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-icon icon-blue">&#127891;</div>
+            <div class="category-name">Prácticas</div>
+            <div class="category-count">812 oportunidades</div>
+          </div>
+          <div class="category-card">
+            <div class="category-icon icon-green">&#128188;</div>
+            <div class="category-name">Empleos</div>
+            <div class="category-count">1,256 oportunidades</div>
+          </div>
+          <div class="category-card">
+            <div class="category-icon icon-red">&#128193;</div>
+            <div class="category-name">Proyectos</div>
+            <div class="category-count">342 oportunidades</div>
+          </div>
+          <div class="category-card">
+            <div class="category-icon icon-yellow">&#127942;</div>
+            <div class="category-name">Becas</div>
+            <div class="category-count">125 oportunidades</div>
+          </div>
+          <div class="category-card">
+            <div class="category-icon icon-purple">&#128155;</div>
+            <div class="category-name">Voluntariados</div>
+            <div class="category-count">98 oportunidades</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED OPPORTUNITIES -->
+      <section class="opportunities-section">
+        <div class="section-header">
+          <h2>Oportunidades destacadas</h2>
+          <a href="#" class="see-all-link">Ver todas</a>
+        </div>
+
+        <div class="opportunity-list">
+
+          <article class="opportunity-card">
+            <div class="company-logo logo-navy">TS</div>
+            <div class="opportunity-details">
+              <div class="opportunity-top-row">
+                <span class="company-name">TechSolutions</span>
+                <span class="tag tag-blue">Empleo</span>
+              </div>
+              <h3 class="opportunity-title">Desarrollador Frontend Junior</h3>
+              <div class="opportunity-meta">
+                <span>&#128205; Remoto</span>
+                <span>&#128337; Tiempo completo</span>
+                <span>&#127891; Ingeniería de Sistemas</span>
+              </div>
+              <p class="opportunity-desc">
+                Buscamos estudiantes o recién graduados con conocimientos en React, JavaScript y HTML/CSS.
+              </p>
+            </div>
+            <div class="opportunity-right">
+              <button class="save-btn" aria-label="Guardar">&#128278;</button>
+              <div class="opportunity-price">
+                <span class="price">$800 - $1,200</span>
+                <span class="price-period">mensuales</span>
+              </div>
+              <button class="btn btn-primary btn-small">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="opportunity-card">
+            <div class="company-logo logo-blue">BG</div>
+            <div class="opportunity-details">
+              <div class="opportunity-top-row">
+                <span class="company-name">Banco General</span>
+                <span class="tag tag-purple">Práctica</span>
+              </div>
+              <h3 class="opportunity-title">Pasantía en Análisis de Datos</h3>
+              <div class="opportunity-meta">
+                <span>&#128205; Panamá</span>
+                <span>&#128337; 6 meses</span>
+                <span>&#127891; Ingeniería / Estadística</span>
+              </div>
+              <p class="opportunity-desc">
+                Apoya en la generación de reportes y análisis de datos. Ideal para estudiantes en etapa avanzada.
+              </p>
+            </div>
+            <div class="opportunity-right">
+              <button class="save-btn" aria-label="Guardar">&#128278;</button>
+              <div class="opportunity-price">
+                <span class="price">B/. 800</span>
+                <span class="price-period">mensuales</span>
+              </div>
+              <button class="btn btn-primary btn-small">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="opportunity-card">
+            <div class="company-logo logo-red">GR</div>
+            <div class="opportunity-details">
+              <div class="opportunity-top-row">
+                <span class="company-name">Grupo Rey</span>
+                <span class="tag tag-lightpurple">Práctica profesional</span>
+              </div>
+              <h3 class="opportunity-title">Práctica Profesional en Marketing</h3>
+              <div class="opportunity-meta">
+                <span>&#128205; Panamá</span>
+                <span>&#128337; 3 meses</span>
+                <span>&#128188; Marketing</span>
+              </div>
+              <p class="opportunity-desc">
+                Apoya en la creación de contenido y análisis de campañas digitales.
+              </p>
+            </div>
+            <div class="opportunity-right">
+              <button class="save-btn" aria-label="Guardar">&#128278;</button>
+              <div class="opportunity-price">
+                <span class="price">B/. 600</span>
+                <span class="price-period">mensuales</span>
+              </div>
+              <button class="btn btn-primary btn-small">Ver detalles</button>
+            </div>
+          </article>
+
+        </div>
+
+        <a href="#" class="see-all-link opportunities-see-all">Ver todas las oportunidades &rsaquo;</a>
+      </section>
+
+    </div>
+
+    <!-- RIGHT COLUMN / SIDEBAR -->
+    <aside class="content-right">
+
+      <section class="activity-card">
+        <div class="section-header">
+          <h2>Actividad en la comunidad</h2>
+          <a href="#" class="see-all-link">Ver todas</a>
+        </div>
+
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-avatar-wrapper">
+              <div class="activity-avatar">Agregar Imagen aqui</div>
+              <span class="activity-badge badge-green">&#128172;</span>
+            </div>
+            <div class="activity-text">
+              <p><strong>María L.</strong> compartió una experiencia</p>
+              <p class="activity-sub">Consejos para mi primera entrevista técnica</p>
+              <p class="activity-time">hace 2 horas</p>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-avatar-wrapper">
+              <div class="activity-avatar">Agregar Imagen aqui</div>
+              <span class="activity-badge badge-blue">&#128188;</span>
+            </div>
+            <div class="activity-text">
+              <p><strong>Diego P.</strong> recomendó una oportunidad</p>
+              <p class="activity-sub">Pasantía en Desarrollo de Software - TechSolutions</p>
+              <p class="activity-time">hace 5 horas</p>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-avatar-wrapper">
+              <div class="activity-avatar">Agregar Imagen aqui</div>
+              <span class="activity-badge badge-purple">&#10067;</span>
+            </div>
+            <div class="activity-text">
+              <p><strong>Ana C.</strong> hizo una pregunta</p>
+              <p class="activity-sub">¿Qué tan importante es el inglés en tu carrera?</p>
+              <p class="activity-time">hace 8 horas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-card">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <span class="quote-mark-big">&#8220;</span>
+        <p class="testimonial-text">
+          Gracias a Comunidad U conseguí mi primera práctica profesional. Además he aprendido muchísimo de los consejos y experiencias de otros estudiantes.
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">Agregar Imagen aqui</div>
+          <span>— <strong>Javier M.</strong>, Estudiante de Ing. Industrial</span>
+        </div>
+        <div class="testimonial-nav">
+          <button class="carousel-arrow" aria-label="Anterior">&#8249;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="carousel-arrow" aria-label="Siguiente">&#8250;</button>
+        </div>
+      </section>
+
+    </aside>
   </div>
 
-  <button aria-label="Notificaciones">
-    &#128276;
-  </button>
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div class="cta-left">
+        <div class="cta-icon">&#128101;</div>
+        <div class="cta-text">
+          <h3>¿Listo para impulsar tu futuro?</h3>
+          <p>Únete a miles de estudiantes y egresados que ya están aprovechando las oportunidades de nuestra comunidad.</p>
+        </div>
+      </div>
+      <div class="cta-buttons">
+        <button class="btn btn-primary">Crear mi cuenta gratis</button>
+        <button class="btn btn-outline">Iniciar sesión</button>
+      </div>
+    </div>
+  </section>
 
-  <div>
-    <span>&#128100;</span>
-  </div>
+</main>
 
-  <span>&#9662;</span>
-</div>
+</body>
+</html>
