@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UTP-Conecta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+<aside id="sidebar" class="sidebar">
+  <a href="#inicio" class="brand">
+    <img src="img/logo-utp.png" alt="" onerror="this.style.display='none'">
+    <div><b>UTP<span>Conecta</span></b><small>Camino a la excelencia a través del mejoramiento continuo</small></div>
+  </a>
+  <nav>
+    <p class="nav-t">Menú principal</p>
+    <a href="#inicio" data-r="inicio"><i data-lucide="layout-grid"></i>Inicio</a>
+    <a href="#oportunidades" data-r="oportunidades"><i data-lucide="briefcase"></i>Oportunidades</a>
+    <a href="#comunidad" data-r="comunidad"><i data-lucide="users"></i>Comunidad<em>3</em></a>
+    <a href="#recursos" data-r="recursos"><i data-lucide="book"></i>Recursos</a>
+    <a href="#perfil" data-r="perfil"><i data-lucide="user"></i>Mi perfil</a>
+    <p class="nav-t">Herramientas</p>
+    <a href="#publicar" data-r="publicar"><i data-lucide="plus"></i>Crear publicación</a>
+    <a href="#kit" data-r="kit"><i data-lucide="layers"></i>Mapa y UI kit</a>
+  </nav>
+  <div class="me"><span class="av">AC</span><div><b>Andrea Castillo</b><small>Estudiante UTP</small></div></div>
+</aside>
+<div class="main">
+  <header class="top">
+    <button class="burger" data-a="menu" aria-label="Menú"><i data-lucide="menu"></i></button>
+    <div class="crumb">Plataforma UTP <i data-lucide="chevron-right"></i> <b id="crumb"></b></div>
+    <div class="top-r">
+      <a href="#" class="link" data-a="login">Iniciar sesión</a>
+      <span class="live"><i></i>Comunidad activa</span>
+      <i data-lucide="bell"></i><span class="av">AC</span>
+    </div>
+  </header>
+  <main id="view"></main>
+  <footer>© 2026 UTP-Conecta · Construyendo futuros en comunidad.<span><a href="#kit">Sistema de diseño</a> · <a href="#" data-a="login">Iniciar sesión</a></span></footer>
+</div>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
